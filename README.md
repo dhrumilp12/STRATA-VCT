@@ -1,15 +1,6 @@
-# STRATA-VCT
- StratAssist VCT aims to revolutionize the way esports teams are managed and prepared for competitions, providing a competitive edge through detailed analytics and AI-powered insights. The tool not only supports team managers in making informed decisions but also promotes a deeper understanding and appreciation of the strategic aspects of VALORANT esports.
+# STRATA-VCT (Back-end)
 
-Certainly! Below is a template for a README file for your project "StratAssist VCT" which uses Node.js, Express, and communicates with a Python service using LangChain. The README includes sections on setup, usage, and basic troubleshooting.
-
-### README Template for StratAssist VCT Backend
-
----
-
-# StratAssist VCT Backend
-
-This repository contains the backend code for the StratAssist VCT, a digital assistant designed to help manage and strategize esports teams for VALORANT. It utilizes Node.js with Express for the web server and integrates with a Python service using LangChain for advanced language processing.
+This repository contains the backend code for the StratAssist VCT.It aims to revolutionize the way esports teams are managed and prepared for competitions, providing a competitive edge through detailed analytics and AI-powered insights. The tool not only supports team managers in making informed decisions but also promotes a deeper understanding and appreciation of the strategic aspects of VALORANT esports.. It utilizes Node.js with Express for the web server and integrates with a Python service using LangChain for advanced language processing.
 
 ## Getting Started
 
