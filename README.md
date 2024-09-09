@@ -15,7 +15,7 @@ What things you need to install the software and how to install them:
 - [Express.js](https://expressjs.com/)
 - [LangChain](https://js.langchain.com/v0.1/docs/get_started)
 
-Certainly! A well-organized project structure is crucial for maintainability, scalability, and collaboration, especially when working with technologies like Node.js and Python. Below is a suggested project structure for your StratAssist VCT Backend, which includes both Node.js and Python components:
+
 
 ### Suggested Project Structure
 
