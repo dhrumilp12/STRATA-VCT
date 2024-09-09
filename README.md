@@ -19,19 +19,7 @@ Certainly! A well-organized project structure is crucial for maintainability, sc
 
 ### Suggested Project Structure
 
-
-STRATA-VCT/
-│
-│── ├── src/
-│   │   ├── config/            # Configuration files and environment variable management
-│   │   ├── controllers/       # Controller files to handle request logic
-│   │   ├── middleware/        # Middleware functions for request processing
-│   │   ├── models/            # Database models (if using an ORM)
-│   │   ├── routes/            # Route definitions for the Express application
-│   │   └── utils/             # Utility functions and helpers
-│   ├── tests/                 # Test scripts for the Node.js application
-│   ├── server.js              # Entry point for the Node.js application
-│   └── package.json           # Node package manifest
+![image](https://github.com/user-attachments/assets/b1cfd504-bde5-4fa9-84a0-8285f3e2adc1)
 
 
 ### Description of Key Components
