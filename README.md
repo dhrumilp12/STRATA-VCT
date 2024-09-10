@@ -14,6 +14,7 @@ What things you need to install the software and how to install them:
 - [npm (Node Package Manager)](https://www.npmjs.com/)
 - [Express.js](https://expressjs.com/)
 - [LangChain](https://js.langchain.com/v0.1/docs/get_started)
+- [AWS - sdk]
 
 Certainly! A well-organized project structure is crucial for maintainability, scalability, and collaboration, especially when working with technologies like Node.js and Python. Below is a suggested project structure for your StratAssist VCT Backend, which includes both Node.js and Python components:
 
