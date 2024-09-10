@@ -16,23 +16,11 @@ What things you need to install the software and how to install them:
 - [LangChain](https://js.langchain.com/v0.1/docs/get_started)
 - [AWS - sdk]
 
-Certainly! A well-organized project structure is crucial for maintainability, scalability, and collaboration, especially when working with technologies like Node.js and Python. Below is a suggested project structure for your StratAssist VCT Backend, which includes both Node.js and Python components:
+
 
 ### Suggested Project Structure
 
-
-STRATA-VCT/
-│
-│── ├── src/
-│   │   ├── config/            # Configuration files and environment variable management
-│   │   ├── controllers/       # Controller files to handle request logic
-│   │   ├── middleware/        # Middleware functions for request processing
-│   │   ├── models/            # Database models (if using an ORM)
-│   │   ├── routes/            # Route definitions for the Express application
-│   │   └── utils/             # Utility functions and helpers
-│   ├── tests/                 # Test scripts for the Node.js application
-│   ├── server.js              # Entry point for the Node.js application
-│   └── package.json           # Node package manifest
+![image](https://github.com/user-attachments/assets/b1cfd504-bde5-4fa9-84a0-8285f3e2adc1)
 
 
 ### Description of Key Components
