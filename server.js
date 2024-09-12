@@ -19,6 +19,7 @@ app.post('/ai-response', (req, res) => {
 
   // Use the Bedrock model to generate a response
   conversation.predict({ input: userInput }).then(response => {
+    console.log("AI Response:", response); // Log the AI response
     res.json({ reply: response });
   }).catch(error => {
     res.status(500).json({ error: 'Error processing your request', details: error.message });
