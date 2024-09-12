@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
-from src.agents.ai_agent import conversation
+from src.agents.ai_agents import conversation  # Adjusted import
 
 load_dotenv()
 
@@ -23,6 +23,7 @@ def ai_response():
         print("AI Response:", response) 
         return jsonify({'reply': response})
     except Exception as error:
+        print("Error:", error)
         return jsonify({'error': 'Error processing your request', 'details': str(error)}), 500
 
 if __name__ == '__main__':

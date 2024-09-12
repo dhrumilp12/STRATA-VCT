@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
-from langchain.embeddings import BedrockEmbeddings
-from langchain.llms import Bedrock
+from langchain_aws import BedrockLLM, BedrockEmbeddings
+
 
 load_dotenv()
 
@@ -16,24 +16,17 @@ def get_azure_openai_variables():
 
 def get_bedrock_llms():
     variables = get_azure_openai_variables()
-    llms = Bedrock(
-        model=variables["COMPLETIONS"],  
-        region=variables["AWS_REGION"],
-        credentials={
-            "aws_access_key_id": variables["AWS_ACCESS_KEY_ID"],
-            "aws_secret_access_key": variables["AWS_SECRET_ACCESS_KEY"],
-        }
+    llms = BedrockLLM(
+        model_id=variables["COMPLETIONS"],  
+        region_name=variables["AWS_REGION"],
+        
     )
     return llms
 
 def get_bedrock_embeddings():
     variables = get_azure_openai_variables()
     embeddings = BedrockEmbeddings(
-        region=variables["AWS_REGION"],
-        credentials={
-            "aws_access_key_id": variables["AWS_ACCESS_KEY_ID"],
-            "aws_secret_access_key": variables["AWS_SECRET_ACCESS_KEY"],
-        },
-        model=variables["EMBEDDINGS"]
+         region_name=variables["AWS_REGION"],
+        model_id=variables["EMBEDDINGS"]
     )
     return embeddings

@@ -1,10 +1,10 @@
-from services.bedrock import GetBedrockLLMs, GetBedrockEmbeddings
-from langchain.memory import BufferMemory
+from src.services.bedrock import get_bedrock_llms, get_bedrock_embeddings
 from langchain.chains import ConversationChain
+from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 
-bedrock = GetBedrockLLMs()
-embeddings = GetBedrockEmbeddings()
+bedrock = get_bedrock_llms()
+embeddings = get_bedrock_embeddings()
 
 custom_prompt = PromptTemplate(
     template="you will use provided data sources to demonstrate effective information retrieval and analysis.\n\nCurrent conversation:\n\nHuman: {input}"
@@ -13,10 +13,9 @@ custom_prompt = PromptTemplate(
 conversation = None
 try:
     conversation = ConversationChain(
-        embeddings=embeddings,
         llm=bedrock,
         verbose=True,
-        memory=BufferMemory(),
+        memory=ConversationBufferMemory(),
         prompt=custom_prompt  
     )
 except Exception as error:
