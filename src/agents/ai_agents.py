@@ -7,9 +7,9 @@ bedrock = get_bedrock_llms()
 embeddings = get_bedrock_embeddings()
 
 custom_prompt = PromptTemplate(
-    template="you will use provided data sources to demonstrate effective information retrieval and analysis.\n\nCurrent conversation:\n\nHuman: {input}"
+    template="you will use provided data sources to demonstrate effective information retrieval and analysis.\n\nCurrent conversation:\n\n{history}\n\nHuman: {input}",
+    input_variables=["history", "input"]
 )
-
 conversation = None
 try:
     conversation = ConversationChain(
